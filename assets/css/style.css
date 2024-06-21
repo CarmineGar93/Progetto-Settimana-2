@@ -87,6 +87,15 @@ section > article, main > div {
     text-shadow: 1px 1px 1px gray;
     margin: 15px 0px 10px 15px;
     
+    
+}
+
+
+figcaption p {
+    margin: 0;
+    display: inline;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 1px gray;
 }
 
 .fake {
@@ -95,16 +104,20 @@ section > article, main > div {
 
 .fake:link, .fake:hover {
     text-decoration: none;
-    color: #165F6A;
+    color: #1d7995;
     text-shadow: 1px 1px 1px gray;
+    font-weight: bold;
 }
 
+.fake:hover {
+    text-decoration: underline;
+}
 
 
 .imgGifts {
     width: 23%;
     display: inline-block;
-    height: 450px;
+    height: 400px;
     margin: 10px;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 2px lightgray;
@@ -152,6 +165,6 @@ section > article, main > div {
 }
 
 .logoFoot img {
-    width: 140px;
-    padding: 50px;
+    width: 150px;
+    padding: 80px;
 }

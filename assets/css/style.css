@@ -1,0 +1,157 @@
+/* Your styles here */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+    font-size: 1.1rem;
+    background-color: #E9EDEE;
+}
+
+.bgDarkGray {
+    background-color: #222F3F;
+}
+
+.bgGray {
+    background-color: #364759;
+}
+
+.center {
+    text-align: center;
+}
+
+.noMarg {
+    margin: 0;
+}
+
+.logoHead {
+    width: 140px;
+}
+
+#head nav, #head img{
+    padding: 10px 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin: 0;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.orange {
+    background-color: #F56600;
+    color: white;
+    padding: 0.5em;
+    
+}
+
+main {
+    width: 95%;
+    margin: 30px auto;
+    
+}
+
+.title {
+    background-image: url(/assets/images/bg-image.png);
+    color: white;
+    padding: 40px 0;
+    background-size: contain;
+}
+
+section > article, main > div {
+    margin-bottom: 25px ;
+}
+
+.findGift {
+    background-color: white;
+    
+}
+
+.findGift p {
+    display: inline-block;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 1px gray;
+    margin: 15px 0px 10px 15px;
+    
+}
+
+.fake {
+    padding-left: 10px;
+}
+
+.fake:link, .fake:hover {
+    text-decoration: none;
+    color: #165F6A;
+    text-shadow: 1px 1px 1px gray;
+}
+
+
+
+.imgGifts {
+    width: 23%;
+    display: inline-block;
+    height: 450px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    min-width: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.url1 {
+    background-image: url(/assets/images/img_1.jpg);
+    
+}
+
+.url2 {
+    background-image: url(/assets/images/img_2.jpg);
+   
+}
+
+.url3 {
+    background-image: url(/assets/images/img_3.jpg);
+   
+}
+
+.url4 {
+    background-image: url(/assets/images/img_4.jpg);
+    
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.bigImg figure img {
+    width: 100%;
+}
+
+.anchor {
+    padding: 10px;
+}
+
+.anchor a:link, .anchor a:visited {
+    color: white;
+}
+
+.logoFoot img {
+    width: 140px;
+    padding: 50px;
+}

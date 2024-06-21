@@ -10,18 +10,18 @@ REGOLE
 /* ESERCIZIO 1
     Dato il seguente array, scrivi del codice per stampare ogni elemento dell'array in console.
 */
-const pets = ['dog', 'cat', 'hamster', 'redfish']
+const pets = ["dog", "cat", "hamster", "redfish"];
 
-console.log('------------------ESERCIZIO 1----------------------');
-for (let i = 0; i < pets.length; i ++) {
-  console.log('L\' elemento ' + (i + 1) + ' è ' + pets[i]);
+console.log("------------------ESERCIZIO 1----------------------");
+for (let i = 0; i < pets.length; i++) {
+  console.log("L' elemento " + (i + 1) + " è " + pets[i]);
 }
 
 /* ESERCIZIO 2
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
 
-console.log('------------------ESERCIZIO 2----------------------');
+console.log("------------------ESERCIZIO 2----------------------");
 pets.sort();
 console.log(pets);
 
@@ -29,7 +29,7 @@ console.log(pets);
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
 
-console.log('------------------ESERCIZIO 3----------------------');
+console.log("------------------ESERCIZIO 3----------------------");
 pets.reverse();
 console.log(pets);
 
@@ -37,7 +37,7 @@ console.log(pets);
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
 
-console.log('------------------ESERCIZIO 4----------------------');
+console.log("------------------ESERCIZIO 4----------------------");
 const primo = pets.shift();
 pets.push(primo);
 console.log(pets);
@@ -47,48 +47,47 @@ console.log(pets);
 */
 const cars = [
   {
-    brand: 'Ford',
-    model: 'Fiesta',
-    color: 'red',
-    trims: ['titanium', 'st', 'active'],
+    brand: "Ford",
+    model: "Fiesta",
+    color: "red",
+    trims: ["titanium", "st", "active"],
   },
   {
-    brand: 'Peugeot',
-    model: '208',
-    color: 'blue',
-    trims: ['allure', 'GT'],
+    brand: "Peugeot",
+    model: "208",
+    color: "blue",
+    trims: ["allure", "GT"],
   },
   {
-    brand: 'Volkswagen',
-    model: 'Polo',
-    color: 'black',
-    trims: ['life', 'style', 'r-line'],
+    brand: "Volkswagen",
+    model: "Polo",
+    color: "black",
+    trims: ["life", "style", "r-line"],
   },
-]
+];
 
-console.log('------------------ESERCIZIO 5----------------------');
-for (let i = 0; i < cars.length; i ++) {
-  cars[i].licensePlate = 'IT';
+console.log("------------------ESERCIZIO 5----------------------");
+for (let i = 0; i < cars.length; i++) {
+  cars[i].licensePlate = "IT";
 }
 console.log(cars);
-
 
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
 
-console.log('------------------ESERCIZIO 6----------------------');
+console.log("------------------ESERCIZIO 6----------------------");
 cars.push({
-  brand: 'Fiat',
-  model: '500X',
-  color: 'white',
-  trims: ['allure', 'GT', 'sport'],
-  licensePlate: 'IT',  
-})
+  brand: "Fiat",
+  model: "500X",
+  color: "white",
+  trims: ["allure", "GT", "sport"],
+  licensePlate: "IT",
+});
 
 for (let i = 0; i < cars.length; i++) {
-cars[i].trims.pop();
+  cars[i].trims.pop();
 }
 
 console.log(cars);
@@ -97,10 +96,10 @@ console.log(cars);
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
 
-console.log('------------------ESERCIZIO 7----------------------');
-const justTrims = []
-for(let i = 0; i < cars.length; i++) {
-  justTrims.push(cars[i].trims.shift())
+console.log("------------------ESERCIZIO 7----------------------");
+const justTrims = [];
+for (let i = 0; i < cars.length; i++) {
+  justTrims.push(cars[i].trims.shift());
 }
 console.log(justTrims);
 
@@ -109,12 +108,12 @@ console.log(justTrims);
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
 
-console.log('------------------ESERCIZIO 8----------------------');
+console.log("------------------ESERCIZIO 8----------------------");
 for (let i = 0; i < cars.length; i++) {
-  if (cars[i].color.charAt(0) === 'b') {
-    console.log('Elemento ' + (i + 1) + ' colore ' + cars[i].color + ' - Fizz')
+  if (cars[i].color.charAt(0) === "b") {
+    console.log("Elemento " + (i + 1) + " colore " + cars[i].color + " - Fizz");
   } else {
-    console.log('Elemento ' + (i + 1) + ' colore ' + cars[i].color + ' - Buzz')
+    console.log("Elemento " + (i + 1) + " colore " + cars[i].color + " - Buzz");
   }
 }
 
@@ -122,18 +121,18 @@ for (let i = 0; i < cars.length; i++) {
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
 */
 
-console.log('------------------ESERCIZIO 9----------------------');
+console.log("------------------ESERCIZIO 9----------------------");
 const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
-]
+];
 
 let i = 0;
-while(i < numericArray.length) {
+while (i < numericArray.length) {
   if (numericArray[i] !== 32) {
-    console.log(numericArray[i])
+    console.log(numericArray[i]);
     i++;
   } else {
-    console.log(numericArray[i])
+    console.log(numericArray[i]);
     break;
   }
 }
@@ -144,75 +143,78 @@ while(i < numericArray.length) {
     es. [f, b, e] --> [6, 2, 5]
 */
 
-console.log('------------------ESERCIZIO 10----------------------');
-const charactersArray = ['g', 'n', 'u', 'z', 'd']
+console.log("------------------ESERCIZIO 10----------------------");
+const charactersArray = ["g", "n", "u", "z", "d"];
+
 
 let newArray = [];
-for (let i = 0; i < charactersArray.length; i ++) {
-  switch (charactersArray[i]) {
-    case 'a':
+let lower;
+for (let i = 0; i < charactersArray.length; i++) {
+  lower = charactersArray[i].toLowerCase();
+  switch (lower) {
+    case "a":
       newArray.push(1);
       break;
-    case 'b':
+    case "b":
       newArray.push(2);
       break;
-    case 'b':
+    case "b":
       newArray.push(3);
       break;
-    case 'd':
+    case "d":
       newArray.push(4);
       break;
-    case 'e':
+    case "e":
       newArray.push(5);
       break;
-    case 'f':
+    case "f":
       newArray.push(6);
       break;
-    case 'g':
+    case "g":
       newArray.push(7);
       break;
-    case 'h':
+    case "h":
       newArray.push(8);
       break;
-    case 'i':
+    case "i":
       newArray.push(9);
       break;
-    case 'l':
+    case "l":
       newArray.push(10);
       break;
-    case 'm':
+    case "m":
       newArray.push(11);
       break;
-    case 'n':
+    case "n":
       newArray.push(12);
       break;
-    case 'o':
+    case "o":
       newArray.push(13);
       break;
-    case 'p':
+    case "p":
       newArray.push(14);
       break;
-    case 'q':
+    case "q":
       newArray.push(15);
       break;
-    case 'r':
+    case "r":
       newArray.push(16);
       break;
-    case 's':
+    case "s":
       newArray.push(17);
       break;
-    case 't':
+    case "t":
       newArray.push(18);
       break;
-    case 'u':
+    case "u":
       newArray.push(19);
       break;
-    case 'v':
+    case "v":
       newArray.push(20);
       break;
-    case 'z':
+    case "z":
       newArray.push(21);
-      break;        
+      break;
   }
 }
 

@@ -2,9 +2,10 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    box-sizing: content-box;
+    box-sizing: border-box;
     font-size: 1.1rem;
     background-color: #E9EDEE;
+    
 }
 
 .bgDarkGray {
@@ -60,7 +61,7 @@ nav ul li a:hover {
 }
 
 main {
-    width: 95%;
+    width: 97%;
     margin: 30px auto;
     
 }
@@ -115,15 +116,19 @@ figcaption p {
 
 
 .imgGifts {
-    width: 23%;
+    
     display: inline-block;
-    height: 400px;
-    margin: 10px;
+    
+    min-height: 450px;
+    min-width: 300px;
+    
+    margin: 10px 20px;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 2px lightgray;
-    min-width: 300px;
+    width: 22%;
     background-size: cover;
     background-position: center;
+    cursor: pointer;
 }
 
 .url1 {
@@ -147,9 +152,9 @@ figcaption p {
 }
 
 .container {
-    margin: 0 auto;
+    margin: 0; 
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 
 .bigImg figure img {

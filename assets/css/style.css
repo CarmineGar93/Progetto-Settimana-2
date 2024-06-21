@@ -86,7 +86,7 @@ section > article, main > div {
     display: inline-block;
     font-size: 1.3em;
     text-shadow: 1px 1px 1px gray;
-    margin: 15px 0px 10px 15px;
+    margin: 15px 0px 10px 25px;
     
     
 }
@@ -116,13 +116,10 @@ figcaption p {
 
 
 .imgGifts {
-    
     display: inline-block;
-    
     min-height: 450px;
     min-width: 300px;
-    
-    margin: 10px 20px;
+    margin: 10px 15px;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 2px lightgray;
     width: 22%;
